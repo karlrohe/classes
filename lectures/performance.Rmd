@@ -1,0 +1,22 @@
+---
+title: "Performance of Data Science"
+author: "Karl Rohe"
+date: "January 18, 2016"
+output: html_document
+---
+
+
+Data Science is not a set of tools.  Data Science (DS) is a performance of [five stances](stances.html).  The performance is an iterative (back and forth) process [through several distinct activities](../diagrams/DataScience.pdf). 
+
+I will rarely do such a "performance" in class; there isn't enough time. Instead, I will show you pieces of the performance in class ("isolated exercises").  You will practice these pieces of the performance.  
+
+With your group, you will practice putting these pieces together into a coherent project (i.e. performing data science).  You will be expected to provide feedback to other groups; if you do not understand something, asking "why did you do that?" typically helps the presenter more than the asker.  "How did you do that?" is also a good question (compress the reproducibility instructions!).  
+
+Many of your classmates already excel in one or more pieces of the performance.  You should pay particular attention to them.
+
+We have 45 hours together.
+
+
+
+
+

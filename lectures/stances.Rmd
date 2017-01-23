@@ -1,0 +1,23 @@
+---
+title: "Stances of Data Science"
+author: "Karl Rohe"
+date: "January 18, 2016"
+output: html_document
+---
+
+
+A "well rounded" statistician / data scientist should move fluidly among six stances (i.e. six ways of focusing attention).  
+Each stance is well suited to certain key concerns.  
+
+1) **scientist**:  application area / data collection /  developing a question  /  "story telling"    
+2)  **coder**:  data processing and wrangling / reproducibility      
+3)  **mathematician**: linear algebra / optimization (RSS) /  math stat    
+4)  **methodologist**: EDA / regression / unsupervised / diagnostics  /  visualizations      
+5)  **skeptic**:   summarizing the results / stakeholders in society  /  broader impacts    
+6)  **student**:  consulting (google, book, friend, professor) for help
+
+Sometimes we say, "I need to put on my scientist hat." This is to indicate that we are changing stances.  Typically, this transition is not marked, but it is instead understood.
+
+Many stances have things to say about key concerns not "assigned to them".  For example, the scientist and the skeptic should periodically be looking over our shoulder.  As such, confronting certain issues might require combining multiple stances.  
+
+Am I missing any stances?   

@@ -1,0 +1,43 @@
+---
+title: "Some fun data sources"
+author: "Karl Rohe"
+date: "January 23, 2016"
+output: html_document
+---
+
+###  Bridges of the USA.  
+[I think this data is so interesting.](https://www.fhwa.dot.gov/bridge/nbi/ascii.cfm)  You should always look for the [data descriptions](https://www.fhwa.dot.gov/bridge/mtguide.pdf).  From page 38, the [ratings of bridge conditions](../diagrams/BridgeConditionRatings.png).  We have three such measurement (for Deck, Superstructure, and Substructure), for *every bridge in the US*, for every year back to 1991.  Lots of other data on each bridge (e.g. county of the bridge). 
+
+Warm up:  make a file with bridge ID, year, fips codes, condition ratings, and a few other variables that interest you.  Make your code reproducible and post to github.  
+
+###  BLS unemployment on counties.
+Monthly or yearly.  
+Easier:  find someone's code on github.  
+Harder: [write your own code to download something from here](https://www.bls.gov/lau/)
+
+Warm up:  make a sequence of 10+ maps of the unemployment rate, one map for each of 10+ years.
+
+
+### Census data
+
+[Search for it](https://www.socialexplorer.com/data/ACS2009_5yr/metadata/?ds=ACS09_5yr), then [load it](acsIntro.R), then [make some maps](makeMaps.R).   First, you must [get an api key](http://api.census.gov/data/key_signup.html).  Before running my code you must type in R: acsKey = "LONG STRING HERE THAT YOU GET FROM PREVIOUS LINK"!!   
+    
+### Election data on counties
+
+It is out there somewhere...
+
+### County wiki data
+
+Scrape the wiki pages on counties for two types of data.  (1) what pages they hyperlink to and (2) the text of the document. 
+    
+    
+    
+### Medicare on NPI's
+
+Could be linked to counties via the NPI's billing zipcode. [Referrals](https://www.docgraph.com/referral-data/), [Utilization](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/),
+[other stuff?](http://www.nber.org/data/npi.html), there is lots more if you go looking and you are good a google (e.g. perscriptions).  
+
+### Harder (and not necessarily linked to counties):
+    
+Bitcoin blockchain, Twitter API, web scraping, other?
+

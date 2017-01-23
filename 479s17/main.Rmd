@@ -1,0 +1,56 @@
+# Stat 479: Data Science with R
+## UW-Madison
+### Spring 2017
+### Karl Rohe
+
+email: first name and last name at stat dott wisc dott edu  
+office: 1239 MSC  
+[Topics outline](TopicsOutline.pdf), [Syllabus](spring17-stat479.pdf), [Project Description](../ProjectDescription.html),
+[R labs in ISLR](labs.R).
+
+
+
+
+
+
+
+### Week 1  
+#### Topics 
+1) who was familiar with github? install and get an account? uploaded a repository?   
+1) [Syllabus](spring17-stat479.pdf)    
+4)  [Quiz 1!](https://classroom.github.com/assignment-invitations/b13369162f094485915e44314c8f1bc0)  
+  - follow link. 
+  - enter github account information.
+  - open respository in web browser -> click "clone or download" -> copy url.
+  - in R studio -> new project -> Version Control -> Git -> paste url.
+  - make edits to file -> commit -> push. 
+4) If you have learned git another way (e.g. in the terminal), that is fine!  You can use that if you prefer.  I find that I am more agile if I don't have to change interfaces.  
+5) [Topics outline](TopicsOutline.pdf)   
+2) [Five Stances of Data Science](../lectures/stances.html)   
+3) [Data Science is a performance of these stances](../lectures/performance.html)    
+2) "Five stances" and "DS is a performance" could have been said about "applied statistics" 50 years ago.  Is "DS" just marketing?  (1) who cares.  (2) the "rebranding" has aligned (in time) with a massive change in the way that we perform applied statistics.  [To me, Data Science is data analysis in the age of the internet. This has two major implications.](../lectures/firstLecture.html)  
+2)  Course pedagogy: I will rarely lecture (like I just did).  Instead, we will have labs that we will perform individually, in small groups; everyone is coding there own code, but we are discussing in small groups.  These labs will often have landmines (things which you don't yet know how to do) and forks in the road (decisions that you must make).  I want you to navigate these things your selves, in small groups.  I will not give you the answers, because the aim is not to teach you how to do these isolated tasks.  Rather, it is to help you figure out how to do things by yourselves. 
+3)  Download some [bridges data](https://www.fhwa.dot.gov/bridge/nbi/ascii.cfm).  Things to do first:  (i) look at a few lines of the raw data, (ii) look at the data description.  In your teams, do both in parallel.  Your first assignement is to download this data into R.   
+3)  Once you have done both (i) and (ii), [look at the assignment](https://classroom.github.com/assignment-invitations/ca7110fc4051645b6c6be47e0773dc91).  It is intentionally vague on several key points.  The important point:  you will use your downloaded data in class next week!  So, make it interesting for yourself.   Also, you will not be able to participate in class next week if you don't do this homework before coming to class.  
+3)  If something is important, keep github up to date and make sure it is reproducible.  
+3)  I run the Data Science Seminar Series (DS3).  [We have a talk on the last Friday of every month from someone in industry](http://pages.stat.wisc.edu/~karlrohe/ds3).  You should absolutely come. This Friday, we will have a talk about MLS soccer. 
+
+### Readings
+
+Chapters 11 and then 5 in r4ds.  You are required to do these readings.  If you do not, then class will not be fun. 
+
+#### Text: 
+[*R for Data Science*](http://r4ds.had.co.nz)  
+by Garrett Grolemund and Hadley Wickham
+
+[*An Introduction to Statistical Learning with Applications in R*](http://www-bcf.usc.edu/~gareth/ISL/)  
+by Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani  
+
+
+#### Helpful links
+1) [Download r4ds](http://r4ds.had.co.nz)  
+1) [Download islr](http://www-bcf.usc.edu/~gareth/ISL/) and lab codes.  
+2) Refresh material: [An Introduction to R](http://cran.r-project.org/doc/manuals/R-intro.pdf)  
+3) [Advanced R](http://adv-r.had.co.nz) by Hadley Wickham  
+4) Making beautiful documents with [R markdown](http://rmarkdown.rstudio.com) and [knitR](http://kbroman.org/knitr_knutshell/).  Here are [some](../ht/rmarkdown-cheatsheet.pdf) helpful [links](../ht/rmarkdown-reference.pdf).
+5) Data from the [American Community Survey](http://en.wikipedia.org/wiki/American_Community_Survey) using R library acs. First, [get api key](http://api.census.gov/data/key_signup.html)  

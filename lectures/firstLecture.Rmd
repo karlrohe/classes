@@ -1,0 +1,143 @@
+---
+title: "The broad contours of data science"
+author: "Karl Rohe"
+date: "January 18, 2016"
+output: html_document
+---
+
+To me, Data Science is *data analysis in the age of the internet*.  
+
+We now have the ability to easily transmit (i) software and (ii) data; while we have always shared software and data, the new found ease of transmission makes for things like github and API data requests. In both software and data, the speed and ease of transmission allows for a richer web of dependencies and interactions which entirely transform the way we do many types of data analysis.
+
+The following are loose definitions that help me navigate the exciting features of Data Science. The following questions are useful starting points for discussion: As "statistical generalists" (like me and hopefully you), where can we help most quickly?  Where should we ask for help?  Where must we learn *a lot more* before trying to help?
+
+###  Definition: Data playground (dp)  
+A data playground is an identifier that is (1) meaningful and relatable and (2) widely used by disparate groups/organizations that share data. 
+
+Exercise:  Search in google for the terms 20500 or 1861440687.  What do those numbers mean?  What is the dp that makes them meaningful?  Why is 1861440687 particularly interesting in the year 2016?
+
+#### Examples of dp's:
+1)  human genes (bioinformatics)
+4)  latitude and longitude (GIS) 
+1)  zip codes 
+2)  counties, especially using [fips codes](http://www.bls.gov/lau/laucntycur14.txt) (government data)
+3)  dates
+4)  publicly listed corporations (finance)
+5)  physicians $\subset$ medicaid billers. via NPI, a unique 10 digit number  (health services research)
+8)  [HRR/HSA](http://www.dartmouthatlas.org/data/region/)
+3)  Hospitals
+6)  [school districts](https://nces.ed.gov/ccd/elsi/tableGenerator.aspx), which can also link to zip codes, county, and other GIS data.
+9)  [stars/galaxies](http://messier.seds.org/xtra/ngc/n7789.html) (astronomy) 
+10) others?
+
+Common feature of data playgrounds:
+You often first experience the playground when it appears as a factor variable with *lots* of levels (20++).   If you see a lot of levels, ask if there is more information about each of those different levels.  If so, then dig in!
+
+#### opposites of a playground:
+1)  continuous variables (usually)
+3)  low dimensional factor variables (usually)
+5)  others?
+
+
+### Definition:  Web contextualized data (wcd) 
+Web contextualized data is a data set (or data point) that exists in a broad constellation of information.  “Web” does not *necessarily* refer to the www, but rather the fact that it is linked to other data sources by at least one data playground.  Via the playground we can contextualize the data we already have.  That is, we can find more information to further study or understand our current data. 
+
+#### In these examples, what are the playgrounds that contextualize the data?     
+1)  Twitter discussions of Donald Trump.
+2)  Unemployment rate by county.
+3)  Institutional records of public school teachers.
+4)  credit card transactions.  
+5)  others?
+
+#### Opposites of wcd:  
+
+1)  de-identified data with low dimensional covariates (what is the dimension of a factor variable?)
+1)  Data sets published in papers or textbooks.  
+2)  Simulations.  
+
+common (neither necessary nor sufficient!) features of wcd:    
+
+1)   stored/shared for other reasons (e.g. accounting)     
+1)   dynamic  
+1)   ephemeral  
+1)   hyperlinked  
+1)   identifying  
+1)   large  
+1)   messy  
+1)   public   
+1)   observational   
+1)   geographic  
+
+
+### Definition: statistical medium (sm)
+
+Here are two definitions of "medium" from the New Oxford American Dictionary (via the mac app "dictionary"):
+
+"a particular form of storage for digitized information, such as magnetic tape or discs." 
+
+Another is:
+
+"the intervening substance through which impressions are conveyed to the senses or a force acts on objects at a distance: 
+*radio communication needs no physical medium between the two stations |* 
+*the medium between the cylinders is a vacuum*."
+
+
+
+
+A statistical medium (sm) is a highly recurring data structure that has an ecosystem of algorithms, software (e.g. packages), and statistical techniques that are focused on the specific idiosyncrasies of the medium.
+
+#### Examples:    
+
+1)  time series
+4)  audio/sound 
+4)  text  
+3)  spatial data
+5)  images
+6)  videos
+8)  networks
+9)  baseball, football, any sport
+1)  ACTG
+9)  others? 
+
+*If you find yourself working on a popular sm, then you should absolutely find the most popular packages in R.*  People spend their lives developing these packages and they help you do very basic things that require lots of (error prone!) coding.  Whenever you can, "steal".  Also, remember to share (so that others can steal it).  
+
+### Definition:  Pipeline
+A pipeline is the final product for a data scientist.  It is code that entirely reproduce the final analysis:  
+
+1)  Import 
+2)  tidy
+2)  transform
+3)  visualize
+4)  model
+3)  (repeat the previous 3 steps as much as necessary for a **final** product)
+4)  communicate
+
+The most interesting pipelines start by importing interesting data.  For example,
+
+1) Data that is ephemeral or dynamic or frequently updating.  In this case, the pipeline is living, not static.  
+3) Data that is part of a playground. So, the pipeline combines heterogeneous sources of data. 
+
+#### Examples  
+
+1) An app that trades stocks 
+2) An app that tweets the trending topics in Donald Trump's twittosphere.  
+4) others?
+
+While these example pipelines might be "autonomous", they still "communicate":  They purchase stocks or makes tweets!  Even in "autonomous" settings, we must be good statisticians! As such, we should necessarily create diagnostics (for our own eyes) that tell us how the pipeline is performing.  So, even an "autonomous" pipeline will include step 4.  As such, the pipeline should communicate with "two audiences".
+
+#### Course aim: to develop an agile stance to quickly iterate through the pipeline.  
+
+As we develop our pipeline, we will necessarily iterate forward *and backward* through the pipeline, developing the separate pieces in non-consecutive order.  In order to quickly iterate, we need to develop the ability to **think** and **code** in concise syntax.  The base R syntax is excessively broad; the tidyverse (which we will learn) and higher levels of programing more generally aim to streamline 80% of the concepts into short syntax.  (story: for loop, match, inner_join). With agile syntax, it will be easy to update code, incorporate new pieces, etc.  
+
+You will develop:
+
+-  A broad set of computational tools (in R); but not the broadest!
+-  A broad set of statistical tools (machine learning); but not the broadest!
+
+Because 80% of problems are very similar, we will focus on doing these with agility. Zen tip:  our aim is "agility" (not "speed") because the aim is efficiency to aid concentration (not efficiency to aid speed). 
+
+#### In this course, you must embed yourself in a playground.
+  
+We will behave as generalists who have not yet specialized, but it is to your advantage if you already have some "specialized knowledge"; it will help you to figure out what is *interesting*.
+
+What do you care about?  Why do you think it is interesting? What kind of data is there on this topic?  Is there a playground?  
