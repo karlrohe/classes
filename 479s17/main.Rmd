@@ -24,6 +24,7 @@ office: 1239 MSC
   - open respository in web browser -> click "clone or download" -> copy url.
   - in R studio -> new project -> Version Control -> Git -> paste url.
   - make edits to file -> commit -> push. 
+  - [Public quiz](https://classroom.github.com/assignment-invitations/b3046e7d994313e9bdea9a35c9203de4)
 4) If you have learned git another way (e.g. in the terminal), that is fine!  You can use that if you prefer.  I find that I am more agile if I don't have to change interfaces.  
 5) [Topics outline](TopicsOutline.pdf)   
 2) [Five Stances of Data Science](../lectures/stances.html)   
